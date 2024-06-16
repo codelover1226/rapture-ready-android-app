@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
 }
-
+//key alias -> Key0 password -> ymcmb1913
 android {
     namespace "com.wRaptureReadyEndTimesNewsProphecyDoctrineofPreTribRapture"
     compileSdk 34
