@@ -145,8 +145,6 @@ public class WebViewContainer extends Fragment {
     private void disableCache(WebView wv){
         // Clear cache
         wv.clearCache(true);
-
-
         wv.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
     }
 
