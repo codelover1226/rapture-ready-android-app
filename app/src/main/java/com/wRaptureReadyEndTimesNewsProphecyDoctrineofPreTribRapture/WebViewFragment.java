@@ -47,14 +47,16 @@ public class WebViewFragment extends Fragment{
         titles[0] = getString(R.string.Rapture_Ready);
         titles[1] = getString(R.string.Rapture_Radio);
         titles[2] = getString(R.string.Rapture_TV);
-        titles[3] = getString(R.string.Rapture_Donate);
-        titles[4] = getString(R.string.Rapture_FB);
+        titles[3] = getString(R.string.Rapture_FB);
+        titles[4] = getString(R.string.Rapture_Donate);
+
 
         webUrls[0] = getString(R.string.Rapture_Ready_link);
         webUrls[1] = getString(R.string.Rapture_Radio_link);
         webUrls[2] = getString(R.string.Rapture_TV_link);
-        webUrls[3] = getString(R.string.Rapture_Donate_link);
-        webUrls[4] = getString(R.string.Rapture_FB_link);
+        webUrls[3] = getString(R.string.Rapture_FB_link);
+        webUrls[4] = getString(R.string.Rapture_Donate_link);
+
     }
 
     @Override

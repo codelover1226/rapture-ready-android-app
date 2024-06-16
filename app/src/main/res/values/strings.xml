@@ -4,16 +4,16 @@
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="Rapture_Ready"><b>Rapture Ready</b></string>
-    <string name="Rapture_TV"><b>Rapture Ready TV</b></string>
-    <string name="Rapture_Radio"><b>Live Radio</b></string>
-    <string name="Rapture_FB"><b>Facebook</b></string>
+    <string name="Rapture_TV"><b>Videos</b></string>
+    <string name="Rapture_Radio"><b>Radio</b></string>
+    <string name="Rapture_FB"><b>Watch TV</b></string>
     <string name="Rapture_Donate"><b>Donate</b></string>
 
     <string name="Rapture_Ready_link">https://raptureready.com</string>
     <string name="Rapture_TV_link">https://raptureready.tv</string>
-    <string name="Rapture_Radio_link">https://eternityreadyradio.com/player/</string>
-    <string name="Rapture_FB_link">https://facebook.com/rapturereadywebsite</string>
-    <string name="Rapture_Donate_link">https://raptureready.com/donate/</string>
+    <string name="Rapture_Radio_link">https://listen.eternityready.com</string>
+    <string name="Rapture_FB_link">https://eternityready.tv/live-tv</string>
+    <string name="Rapture_Donate_link">https://donorbox.org/eternity-ready-radio</string>
 
     <string name="menu_refresh">Refresh</string>
     <string name="menu_share">Share</string>

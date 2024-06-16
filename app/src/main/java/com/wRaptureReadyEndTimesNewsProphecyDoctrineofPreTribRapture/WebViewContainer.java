@@ -74,7 +74,7 @@ public class WebViewContainer extends Fragment {
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.setSaveEnabled(true);
 
-        //webView.getSettings().setAppCacheEnabled(true);
+        disableCache(webView);
 
         webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         webView.setFocusableInTouchMode(true);
@@ -92,6 +92,7 @@ public class WebViewContainer extends Fragment {
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
+                WebViewContainer.this.url = url;
             }
 
             @Override
@@ -107,13 +108,13 @@ public class WebViewContainer extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        if (isLoaded)
-            webView.onResume();
-
-        if (!isLoaded) {
-            webView.loadUrl(url);
-            isLoaded = true;
-        }
+//        if (isLoaded)
+        webView.onResume();
+        disableCache(webView);
+//        if (!isLoaded) {
+        webView.loadUrl(url);
+        isLoaded = true;
+//        }
     }
 
     //opposite of onResume
@@ -122,6 +123,7 @@ public class WebViewContainer extends Fragment {
         super.onPause();
         if (isLoaded)
             webView.onPause();
+        disableCache(webView);
     }
 
     @Override
@@ -138,6 +140,14 @@ public class WebViewContainer extends Fragment {
             webView.restoreState(savedInstanceState);
             isLoaded = savedInstanceState.getBoolean(URL_KEY, false);
         }
+    }
+
+    private void disableCache(WebView wv){
+        // Clear cache
+        wv.clearCache(true);
+
+
+        wv.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
     }
 
     public void tryReload(){
